@@ -30,11 +30,13 @@ const Header = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link to="/">
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Главная
-                  </NavigationMenuLink>
-                </Link>
+                {/* Исправлено: используем просто NavigationMenuLink вместо вложенного Link */}
+                <NavigationMenuLink
+                  className={navigationMenuTriggerStyle()}
+                  asChild
+                >
+                  <Link to="/">Главная</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>О курсе</NavigationMenuTrigger>
@@ -68,18 +70,22 @@ const Header = () => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link to="/#тарифы">
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Тарифы
-                  </NavigationMenuLink>
-                </Link>
+                {/* Исправлено: используем просто NavigationMenuLink вместо вложенного Link */}
+                <NavigationMenuLink
+                  className={navigationMenuTriggerStyle()}
+                  asChild
+                >
+                  <Link to="/#тарифы">Тарифы</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link to="/#контакты">
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Контакты
-                  </NavigationMenuLink>
-                </Link>
+                {/* Исправлено: используем просто NavigationMenuLink вместо вложенного Link */}
+                <NavigationMenuLink
+                  className={navigationMenuTriggerStyle()}
+                  asChild
+                >
+                  <Link to="/#контакты">Контакты</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
