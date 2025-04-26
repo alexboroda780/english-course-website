@@ -1,5 +1,5 @@
-
 import { Button } from "@/components/ui/button";
+import EnrollmentForm from "./EnrollmentForm";
 
 const Hero = () => {
   return (
@@ -18,9 +18,11 @@ const Hero = () => {
             Интенсивный онлайн-курс с носителями языка и персональным наставником для быстрого прогресса
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-base py-6">
-              Записаться на курс
-            </Button>
+            <EnrollmentForm>
+              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-base py-6">
+                Записаться на курс
+              </Button>
+            </EnrollmentForm>
             <Button size="lg" variant="outline" className="text-base py-6">
               Бесплатный пробный урок
             </Button>

@@ -1,7 +1,7 @@
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import EnrollmentForm from "./EnrollmentForm";
 
 const CourseInfo = () => {
   return (
@@ -45,9 +45,11 @@ const CourseInfo = () => {
                   ))}
                 </ul>
                 <div className="flex gap-4 mt-8">
-                  <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
-                    Записаться
-                  </Button>
+                  <EnrollmentForm level="beginner">
+                    <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+                      Записаться
+                    </Button>
+                  </EnrollmentForm>
                   <Button variant="outline" size="lg">
                     Подробная программа
                   </Button>
@@ -94,9 +96,11 @@ const CourseInfo = () => {
                   ))}
                 </ul>
                 <div className="flex gap-4 mt-8">
-                  <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
-                    Записаться
-                  </Button>
+                  <EnrollmentForm level="intermediate">
+                    <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+                      Записаться
+                    </Button>
+                  </EnrollmentForm>
                   <Button variant="outline" size="lg">
                     Подробная программа
                   </Button>
@@ -143,9 +147,11 @@ const CourseInfo = () => {
                   ))}
                 </ul>
                 <div className="flex gap-4 mt-8">
-                  <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
-                    Записаться
-                  </Button>
+                  <EnrollmentForm level="advanced">
+                    <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+                      Записаться
+                    </Button>
+                  </EnrollmentForm>
                   <Button variant="outline" size="lg">
                     Подробная программа
                   </Button>
